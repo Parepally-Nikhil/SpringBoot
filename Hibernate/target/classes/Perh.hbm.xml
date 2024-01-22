@@ -1,0 +1,25 @@
+<hibernate-mapping>
+	<class name="com.example.inheritance.Employee"
+		discriminator-value="emp" table="employee1">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<discriminator column="type" type="string"></discriminator>
+		<property name="name"></property>
+
+		<subclass name="com.example.inheritance.Regular_Employee"
+			discriminator-value="reg_emp">
+			<property name="salary"></property>
+			<property name="bonus"></property>
+		</subclass>
+
+		<subclass name="com.example.inheritance.Contract_Employee"
+			discriminator-value="con_emp">
+			<property name="pay_per_hour"></property>
+			<property name="contract_duration"></property>
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>

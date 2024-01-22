@@ -1,0 +1,74 @@
+body{
+	background-image:url("library3.jpg");
+/* 	background-repeat:no-repeat; */
+	
+	color:pink;
+	font-size:28px;
+	font-weight:bold;
+}
+div{
+	
+	background-color:black;
+	width:41%;
+	position:absolute;
+	left:30%;
+	border-radius:10px;
+	
+/* 	opacity:0.9; */
+}
+div h2{
+	
+	
+	color:grey;
+}
+
+input[type=button],input[type=submit]{
+	
+	background-color:pink;
+	padding:5px;
+	
+	border-radius:4px;
+	font-weight:bold;
+}
+section{
+	position:absolute;
+	left:20%;
+}
+
+header{
+background-color:grey;
+padding:4px;
+white-spacing:pre;
+border-width:5px;
+border-style:solid;
+border-color:black;
+margin:0px;
+}
+
+footer{
+
+
+background-color:grey;
+padding:2px;
+border-width:5px;
+border-style:solid;
+border-color:black;
+margin:0px;
+position:absolute;
+bottom:0%;
+width:98.7%;
+
+}
+
+
+article{
+	background-color:black;
+	border-radius:10px;
+	width:35%;
+	position:absolute;
+	left:33%;
+	opacity:0.9;
+}
+article h2{
+	color:grey;
+}

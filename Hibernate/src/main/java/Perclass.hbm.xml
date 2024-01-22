@@ -1,0 +1,18 @@
+<hibernate-mapping>
+<class name="com.example.inheritance.Employee">
+<id name="id">
+<generator class="increment"></generator>
+</id>
+<property name="name"></property>
+
+<union-subclass name="com.example.inheritance.Regular_Employee">
+<property name="salary"></property>
+<property name="bonus"></property>
+</union-subclass>
+
+<union-subclass name="com.example.inheritance.Contract_Employee">
+<property name="pay_per_hour"></property>
+<property name="contract_duration"></property>
+</union-subclass>
+</class>
+</hibernate-mapping>

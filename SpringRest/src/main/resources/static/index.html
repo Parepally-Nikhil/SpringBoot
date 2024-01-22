@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="rest">ClickRestHere</a>
+<form action="saveticket" method="post">
+Enter ticket id:<input type="text" name="tid"><br>
+Enter ticket class:<input type="text" name="tclass"><br>
+Enter ticket fare:<input type="number" name="tfare"><br>
+<input type="submit" value="SaveTicket">
+</form>
+<br>
+
+<form action="viewdetails">
+<input type="submit" value="GetDetails">
+</form>
+<br>
+
+<form action="viewdetailbyid">
+Enter ticket id:<input type="text" name="tid"><br>
+<input type="submit" value="GetInfoById">
+</form>
+<br>
+
+<form action="deletedetailbyid">
+Enter ticket id:<input type="text" name="tid"><br>
+<input type="submit" value="DeleteInfoById">
+</form>
+<br>
+</body>
+</html>
